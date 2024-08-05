@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishali Soni Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/9470f398bb.js" crossorigin="anonymous"></script>  <!--Icon kit link-->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo2.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Vaishali Soni</span> from INDIA</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">  
+                    <img src="images/Profile.jpeg" alt="about pic" class="pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Fresher with a strong foundation in Java, Python, and SQL, seeking to leverage skills in web development, API development, and Java in challenging software engineering roles. Passionate about developing scalable solutions and continuously learning new technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Java, Python, SQL, JavaScript.</li>
+                            <li><span>Web Development:</span><br>HTML, CSS, JavaScript, React, Bootstrap.</li>
+                            <li><span>API Development:</span><br>RESTful APIs using Java (Javalin, Spring Boot).</li>
+                            <li><span>Database Management:</span><br>MySQL.</li>
+                            <li><span>Version Control:</span><br>Git, GitHub.</li>
+                            <li><span>Operating Systems:</span><br>Basic knowledge of Linux.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Bachelor of Technology in Computer Science<br> Shri Ram Institute of Technology, Jabalpur, MP — 8.46 CGPA</li>
+                            <li><span>2018-2019</span><br>Higher Secondary(XII)<br> M.L.B Girls School, Jabalpur, MP — 75%</li>
+                            <li><span>2016-2017</span><br>Secondary(X)<br> M.L.B Girls School, Jabalpur, MP — 82%</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Revature Pre-Training Program</span><br>(May-August 2024)</li>
+                            <li><span>CISCO Data Analytics Essentials</span><br>Successfully achieved student level credential for completing the Data Analytics Essentials course, including data analysis using Excel, SQL, Tableau, and other tools.</li>
+                            <li><span>HackerRank</span><br>5-star rating in SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span>Revature Software Engineer Internship</span><br>May 2024 - Aug 2024</li>
+                            <li><span>Role:</span> Back-end Developer</li>
+                            <li><span>Responsibilities:</span>
+                                <ul>
+                                    <li>Developed programming skills in Java, SQL, RESTful API Construction and Spring Framework.</li>
+                                    <li>Implemented project work including construction of functional REST APIs using Test Driven Development methodologies.</li>
+                                    <li>Completed 108 Coding Activities.</li>
+                                    <li>Showcased understanding of concepts through fourteen (14) evaluations.</li>
+                                    <li>Leverage Java APIs to write algorithms to solve various challenges and problem sets.</li>
+                                </ul>
+                            </li>
+                            <li><span>Tools / Technologies:</span> Java, SQL, JDBC, Maven, GIT, Javalin, JUnit, Mockito, Logback, Spring Framework, Spring Boot, Spring Web Module, Spring Data JPA Module.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create visually appealing and user-friendly web designs. My focus is on ensuring the best user experience by employing modern design principles and staying updated with the latest trends and technologies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>I have experience in managing and optimizing databases. My work includes designing efficient database schemas, writing complex queries, and ensuring data integrity and security.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>API Design</h2>
+                    <p>I specialize in building robust and scalable APIs. My approach involves designing APIs that are easy to use and integrate, ensuring seamless communication between different software systems.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Portfolio   Work--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/API.png" height="300">
+                    <div class="layer">
+                        <h3>Social Media Blog API</h3>
+                        <p>Developed a robust API for user account management and CRUD operations on blog messages using Java, Spring, Spring Boot, Spring Data JPA, Javalin, and JDBC. Ensured API efficiency and scalability with JUnit and HttpClient testing.</p>
+                        <a href="https://github.com/vaishalisoni14/vaishalisoni14-pep-spring-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/FruitRecognition.jpeg" hidden="250">
+                    <div class="layer">
+                        <h3>Fruit Recognition System</h3>
+                        <p>Built an image recognition model with 90% accuracy using Python and ML techniques. Implemented logging using MongoDB and CI/CD with GitHub.</p>
+                        <a href="https://github.com/vaishalisoni14/FRUIT-RECOGNITTION"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Ecommerce.jpeg" height="300">
+                    <div class="layer">
+                        <h3>E-Commerce Sales Dashboard</h3>
+                        <p>Created an interactive dashboard for sales analysis and visualization using Power BI and Excel.</p>
+                        <a href="https://github.com/vaishalisoni14/E-commerce-Sales-Dashboard-using-Power-BI"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Weather.jpeg" height="300">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Developed a user-friendly Weather App that fetches and displays real-time weather data using HTML, CSS, JavaScript, and the OpenWeatherMap API.</p>
+                        <a href="https://github.com/vaishalisoni14/Weather-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Contact Me----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>148vaishu@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7987306419</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vaishalisoni100/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vaishalisoni14"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.hackerrank.com/profile/148vaishu"><i class="fa-brands fa-hackerrank"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1_n-kVlSgiZgx6HAaDrxCg4GPYHdW4mgS/view?usp=sharing" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Tab switching -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- JavaScript for Side Menu -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- Form submission script -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXV9-lgNfvO1ffJdaSvUcCi5pmkylsnSy9C1SRlwxFFSiIOCd9v1fQBiJN2j-QgfJIlw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
